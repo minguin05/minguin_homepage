@@ -31,7 +31,6 @@ class User extends Authenticatable
      */
     protected $hidden = [
         'user_pw',
-        'user_id',
     ];
 
     /**

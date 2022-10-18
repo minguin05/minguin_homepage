@@ -36,5 +36,15 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
+        
+    }
+
+    /**
+     * Change email login to id login
+     * 
+     */
+    public function username()
+    {
+        return 'user_id';
     }
 }
