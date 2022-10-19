@@ -128,7 +128,7 @@ trait AuthenticatesUsers
      */
     protected function authenticated(Request $request, $user)
     {
-        //
+        $request->session()->put('current_user',Auth::user());
     }
 
     /**
