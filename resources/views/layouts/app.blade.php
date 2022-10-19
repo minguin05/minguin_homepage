@@ -35,7 +35,7 @@
                     <ul class="navbar-nav me-auto">
                         @auth
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/home') }}">{{ __('게시글') }}</a>
+                                <a class="nav-link" href="{{ url('/boards') }}">{{ __('게시글') }}</a>
                             </li>
                         @endauth
                     </ul>
