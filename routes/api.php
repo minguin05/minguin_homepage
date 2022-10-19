@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::post('/boards', [App\Http\Controllers\Board\BoardWriteController::class, 'saveBoard']); // 폼에 입력된 데이터 저장

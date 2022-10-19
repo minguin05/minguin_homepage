@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/boards', [App\Http\Controllers\Board\BoardListController::class, 'index'])->name('board'); // 게시판 리스트 조회
