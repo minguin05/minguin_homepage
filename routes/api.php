@@ -19,3 +19,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::post('/boards', [App\Http\Controllers\Board\BoardWriteController::class, 'saveBoard']); // 폼에 입력된 데이터 저장
+
+Route::get('/file/{id}', [App\Http\Controllers\Board\BoardDetailController::class, 'getFileDownload']); // 폼에 입력된 데이터 저장
